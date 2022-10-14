@@ -3,27 +3,21 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import AdbIcon from '@mui/icons-material/Adb';
+import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
-const ResponsiveAppBar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-    return (
+const TopBar = () => {
+  return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <div
             style={{
-              display: 'flex',
-              margin: 'auto',
-              alignItems: 'center',
+              display: "flex",
+              margin: "auto",
+              alignItems: "center",
             }}
           >
-            <AdbIcon sx={{ display: 'flex', mr: 1 }} />
+            <AdbIcon sx={{ display: "flex", mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
@@ -31,13 +25,13 @@ const ResponsiveAppBar = () => {
               href=""
               sx={{
                 mr: 2,
-                display: 'flex',
+                display: "flex",
                 flexGrow: 1,
-                fontFamily: 'monospace',
+                fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
               }}
             >
               LOGO
@@ -48,4 +42,4 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
-export default ResponsiveAppBar;
+export default TopBar;
